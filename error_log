@@ -1,0 +1,3 @@
+[08-Apr-2016 15:07:45 UTC] PHP Parse error:  syntax error, unexpected 'add_action' (T_STRING) in /home/publcccc/public_html/beta/wp-content/themes/FoundationPress-child/functions.php on line 12
+[08-Apr-2016 15:10:20 UTC] PHP Fatal error:  Cannot redeclare theme_enqueue_styles() (previously declared in /home/publcccc/public_html/beta/wp-content/themes/FoundationPress-child/functions.php:13) in /home/publcccc/public_html/beta/wp-content/themes/FoundationPress-child/functions.php on line 24
+[08-Apr-2016 15:17:12 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/publcccc/public_html/beta/wp-content/themes/FoundationPress-child/paper_score.php on line 3

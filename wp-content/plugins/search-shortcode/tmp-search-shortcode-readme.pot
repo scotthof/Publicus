@@ -1,0 +1,22 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Search shortcode"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Provides a [search] shortcode to insert search form in content."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Works with all bundled themes (2010,2011,2012). Should work with any other decently coded theme"
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page."
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "1.0 initial release"
+msgstr ""

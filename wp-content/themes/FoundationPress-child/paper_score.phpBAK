@@ -1,0 +1,39 @@
+<?php
+function dump($data) {
+    if(is_array($data)) { //If the given variable is an array, print using the print_r function.
+        print "<pre>-----------------------\n";
+        print_r($data);
+        print "-----------------------</pre>";
+    } elseif (is_object($data)) {
+        print "<pre>==========================\n";
+        var_dump($data);
+        print "===========================</pre>";
+    } else {
+        print "=========&gt; ";
+        var_dump($data);
+        print " &lt;=========";
+    }
+} 
+
+function set_scores($review_id, $review, $update) {
+	// If this is a revision, get real review ID
+	if ( $parent_id = wp_is_post_revision( $review_id ) ) {
+		$review_id = $parent_id;
+	}
+
+//echo $review_id;
+//dump($review);
+//dump($update);
+	//$paper_id = wpcf_pr_post_get_belongs($review_id, 'paper');
+
+	remove_action('wp_insert_post', 'set_scores', 99, 3);
+
+//dump(get_post($review_id));
+//dump(get_post_custom($review_id));
+	$res = update_post_meta($review_id, 'wpcf-ethics-rating', 9);
+	//set_paper_review_score($review_id);
+	//set_paper_score($paper_id);
+
+	add_action('wp_insert_post', 'set_scores', 99, 3);
+}
+add_action('wp_insert_post', 'set_scores', 99, 3);
